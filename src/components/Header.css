@@ -1,0 +1,16 @@
+header {
+  width: 100vW;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+nav .active {
+  color: #ffffff;
+  font-weight: bold;
+}

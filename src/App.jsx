@@ -8,12 +8,15 @@ import Contact from "./pages/Contact"
 
 export default function App() {
   return (
+    // <h1>CYPEKdev</h1>
+
     <BrowserRouter>
       <Header/>
+      
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/news" element={<News/>} />
-        <Route path="/project" element={<Projects/>} />
+        <Route path="/projects" element={<Projects/>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
