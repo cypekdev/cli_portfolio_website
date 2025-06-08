@@ -59,20 +59,63 @@ button {
   transition: border-color 0.25s;
 }
 
-pre {
+.logo {
+  position: relative;
   margin: 0 auto;
   width: 1040px;
+  user-select: none;
+}
+
+pre {
   font-family: consolas;
   font-size: 2.3rem;
   line-height: 1.2;
   font-weight: 400;
-  position: relative;
 }
 
-pre.blur {
+
+.blur {
   filter: blur(5px);
   position: absolute;
   top: 0;
   padding: 0;
   margin: 0;
+  
+}
+
+.whiteText {
+  color: #FFFFFF;
+}
+
+.blueText {
+  color: #62E2FF;
+}
+
+.greenText {
+  color: #7DFF81;
+}
+
+.purpleText {
+  color: #E3B2FF;
+}
+
+.pinkText {
+  color: #EC8FFF;
+}
+
+
+.blur .blueText {
+  color: #00D0FF;
+}
+
+.blur .greenText {
+  color: #22FF2A;
+}
+
+.blur .purpleText {
+  color: #C561FF;
+}
+
+.blur .pinkText {
+  color: #E561FF;
 }
