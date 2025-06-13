@@ -2,11 +2,11 @@
   --site-width: min(100%, 1040px);
 
   
-  font-family: Monospac821 BT, monospace;
+  font-family: monospace;
   line-height: 1.5;
   font-weight: 400;
 
-
+  font-size: 16px;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -62,20 +62,20 @@ button {
 .logo {
   position: relative;
   margin: 0 auto;
-  width: 1040px;
+  width: min-content;
   user-select: none;
 }
 
 pre {
-  font-family: consolas;
-  font-size: 2.3rem;
+  font-family: monospace;
+  font-size: min(2.3rem, 3.1vw);
   line-height: 1.2;
   font-weight: 400;
 }
 
 
 .blur {
-  filter: blur(5px);
+  filter: blur(min(7px, 0.6vw));
   position: absolute;
   top: 0;
   padding: 0;

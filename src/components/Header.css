@@ -7,10 +7,11 @@ header {
   justify-content: center;
 
   background-color: #0008;
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(10px);
 
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 nav {
@@ -23,7 +24,7 @@ nav a {
   color: #ffffff;
   text-decoration: none;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: bolder;
 }
 
 .active {
