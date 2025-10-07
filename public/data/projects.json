@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Let's Gym It",
+    "image": "/images/letsgymit.png",
+    "description": "A mobile fitness app that helps you create a workout plan, stay motivated and track your progress.",
+    "url": "https://github.com/cypekdev/Let-s-Gym-It"
+  },
+  {
+    "title": "School website",
+    "image": "/images/letsgymit.png",
+    "description": "A website for a school, providing information about the school, its staff, and its activities.",
+    "url": "https://www.zs10.zabrze.pl/"
+  },
+  {
+    "title": "CanSat competition",
+    "image": "/images/letsgymit.png",
+    "description": "A project for the CanSat competition, where we built a small satellite that can be launched on a rocket and perform various tasks.",
+    "url": "https://www.youtube.com/@MeteoSat_Cansat"
+  },
+  {
+    "title": "Politechnika",
+    "image": "/images/letsgymit.png",
+    "description": ""
+    
+  },
+  {
+    "title": "Glowing ball"
+
+  },
+  {
+    "title": "Terminal"
+  },
+  {
+    "title": "Tic Tac Toe 3D"
+  }
+]
