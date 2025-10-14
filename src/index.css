@@ -1,6 +1,5 @@
 :root {
   --site-width: min(100%, 1040px);
-
   
   font-family: monospace;
   line-height: 1.5;
@@ -9,17 +8,18 @@
   font-size: 16px;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background-image: linear-gradient(
     to top right,
     #16181B 0%,
     #0A0C10 100%
   );
+  background-attachment: fixed;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 a {
@@ -36,10 +36,7 @@ a {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {

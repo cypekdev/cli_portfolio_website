@@ -10,13 +10,12 @@ header {
   align-items: center;
   justify-content: center;
 
-  /* background-color: rgba(34, 34, 34, 0.533); */
-  backdrop-filter: blur(7px);
+  background-color: rgba(34, 34, 34, 0.123);
+  backdrop-filter: blur(10px);
   border-radius: 100px;
 
-  /* box-shadow: 0 0 20px #0003; */
-  border: .5px solid #ffffff18;
-  border-color: transparent;
+  box-shadow: 0 0 20px #0003;
+  border: .5px solid #ffffff17;
 
   position: fixed;
   top: 10px;
