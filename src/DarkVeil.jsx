@@ -14,6 +14,7 @@ precision lowp float;
 uniform vec2 uResolution;
 uniform float uTime;
 uniform float uHueShift;
+uniform float uOpacity;
 uniform float uNoise;
 uniform float uScan;
 uniform float uScanFreq;
@@ -71,7 +72,7 @@ void main(){
     float scanline_val=sin(gl_FragCoord.y*uScanFreq)*0.5+0.5;
     col.rgb*=1.-(scanline_val*scanline_val)*uScan;
     col.rgb+=(rand(gl_FragCoord.xy+uTime)-0.5)*uNoise;
-    vec3 finalColor=clamp(col.rgb,0.0,1.0);
+    vec3 finalColor=clamp(col.rgb,0.0,uOpacity);
     float brightness = length(finalColor);
     gl_FragColor=vec4(finalColor,brightness);
 }
@@ -79,6 +80,7 @@ void main(){
 
 export default function DarkVeil({
   hueShift = 0,
+  opacity = 1,
   noiseIntensity = 0,
   scanlineIntensity = 0,
   speed = 0.5,
@@ -109,6 +111,7 @@ export default function DarkVeil({
         uTime: { value: 0 },
         uResolution: { value: new Vec2() },
         uHueShift: { value: hueShift },
+        uOpacity: { value: opacity },
         uNoise: { value: noiseIntensity },
         uScan: { value: scanlineIntensity },
         uScanFreq: { value: scanlineFrequency },

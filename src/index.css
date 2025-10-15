@@ -19,7 +19,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 a {
@@ -37,6 +36,7 @@ a {
 body {
   margin: 0;
   min-width: 320px;
+  width: 100%;
 }
 
 h1 {
@@ -54,65 +54,4 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-
-.logo {
-  position: relative;
-  margin: 0 auto;
-  width: min-content;
-  user-select: none;
-}
-
-pre {
-  font-family: monospace;
-  font-size: min(2.3rem, 3.1vw);
-  line-height: 1.2;
-  font-weight: 400;
-}
-
-
-.blur {
-  filter: blur(min(7px, 0.6vw));
-  position: absolute;
-  top: 0;
-  padding: 0;
-  margin: 0;
-  
-}
-
-.whiteText {
-  color: #FFFFFF;
-}
-
-.blueText {
-  color: #62E2FF;
-}
-
-.greenText {
-  color: #7DFF81;
-}
-
-.purpleText {
-  color: #E3B2FF;
-}
-
-.pinkText {
-  color: #EC8FFF;
-}
-
-
-.blur .blueText {
-  color: #00D0FF;
-}
-
-.blur .greenText {
-  color: #22FF2A;
-}
-
-.blur .purpleText {
-  color: #C561FF;
-}
-
-.blur .pinkText {
-  color: #E561FF;
 }

@@ -1,10 +1,11 @@
 header {
   /* width: 70%; */
+  max-width: 1000px;
   margin-inline: auto;
   padding: 10px;
   left: 0;
   right: 0;
-
+  box-sizing: border-box;
 
   display: flex;
   align-items: center;
@@ -29,11 +30,16 @@ header > nav {
 }
 
 header > nav a {
-  color: #ffffff;
+  color: #fffd;
+  transition: color 0.3s ease-in;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
+header > nav a.active,
+header > nav a:hover {
+  color: #fff;
+}
 
 @media only screen and (max-width: 800px) {
   header,

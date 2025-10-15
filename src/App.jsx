@@ -12,7 +12,7 @@ export default function App() {
     <BrowserRouter>
       <div style={{ width: '100%', minHeight: '100vh', position: 'absolute' }}>
         <div style={{ position: "absolute",  width: "100%", height: "100%" }}>      
-          <DarkVeil hueShift={14} opacity={0.4}/>
+          <DarkVeil hueShift={14} opacity={.5}/>
         </div>
 
         <Navigation/>
