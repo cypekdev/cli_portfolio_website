@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter as Router, Routes, Route } from "react-router-dom"
 import Navigation from "./components/Navigation"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
@@ -9,7 +9,7 @@ import DarkVeil from "./DarkVeil"
 export default function App() {
   return (
 
-    <BrowserRouter>
+    <Router>
       <div style={{ width: '100%', minHeight: '100vh', position: 'absolute' }}>
         <div style={{ position: "absolute",  width: "100%", height: "100%" }}>      
           <DarkVeil hueShift={14} opacity={.5}/>
@@ -25,7 +25,7 @@ export default function App() {
           </Routes>
 
       </div>
-    </BrowserRouter>
+    </Router>
 
   )
 
