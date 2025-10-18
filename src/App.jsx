@@ -11,19 +11,23 @@ export default function App() {
 
     <Router>
       <div style={{ width: '100%', minHeight: '100vh', position: 'absolute' }}>
-        <div style={{ position: "absolute",  width: "100%", height: "100%" }}>      
+        <div style={{ 
+          position: "absolute",  
+          width: "100%", 
+          height: "100%", 
+          overflow: "hidden",
+          zIndex: -1}}>      
           <DarkVeil hueShift={14} opacity={.5}/>
         </div>
-
+        
         <Navigation/>
-      
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/projects" element={<Projects/>} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
 
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
     </Router>
 

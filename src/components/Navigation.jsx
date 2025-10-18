@@ -50,9 +50,9 @@ function Header() {
 
 function BottomNavbarElement({SvgComponent, text, to}) {
   return (
-    <NavLink to={to} className={({isActive}) => `bottom-nav-element ${isActive && 'active'}`}>
+    <NavLink to={to} className={"bottom-nav-element"}>
       {({isActive}) => (<>
-        <SvgComponent style={{ height: 20, width: 20, fill: isActive ? '#fff' : '#bbb'}} />
+        <SvgComponent style={{ height: 25, width: 25, fill: isActive ? '#fff' : '#bbb'}} />
         <span>{text}</span>
       </>)}
     </NavLink>

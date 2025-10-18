@@ -10,7 +10,7 @@ import ChipSvg from "../assets/chip.svg?react"
 function Card({ Svg, top, bottom, left, right }) {
   return (
   <div className="images-card" style={{ top, bottom, left, right }}>
-    <Svg style={{ width: 125, height: 125, fill: "#fff9" }}/>
+    <Svg style={{ width: "100%", height: "100%", fill: "#fff9" }}/>
   </div>
   )
 }
@@ -32,12 +32,12 @@ export default function About() {
       <div className="image-content">
         <div className="images">
           <img src={image} alt="Cyprian Moj zdjęcie" className="main-picture" />
-          <Card Svg={TerminalSvg} top={-90} left={-90}></Card>
-          <Card Svg={LightbulbSvg} top={-60} right={-80}></Card>
-          <Card Svg={MusicSvg} top={190} right={-140}></Card>
-          <Card Svg={CubeSvg} bottom={-40} right={-90}></Card>
-          <Card Svg={CodeSvg} bottom={-70} left={-70}></Card>
-          <Card Svg={ChipSvg} top={160} left={-160}></Card>
+          <Card Svg={TerminalSvg} top={"-15%"} left={"-25%"}></Card>
+          <Card Svg={LightbulbSvg} top={"-10%"} right={"-22%"}></Card>
+          <Card Svg={MusicSvg} bottom={"35%"} right={"-33%"}></Card>
+          <Card Svg={CubeSvg} bottom={"-9%"} right={"-20%"}></Card>
+          <Card Svg={CodeSvg} bottom={"-12%"} left={"-17%"}></Card>
+          <Card Svg={ChipSvg} top={"32%"} left={"-35%"}></Card>
         </div>
 
       </div>

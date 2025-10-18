@@ -55,7 +55,7 @@ header > nav a:hover {
   left: 0;
   right: 0;
   margin-inline: auto;
-  width: min(100vw, 400px);
+  width: min(90vw, 400px);
   background-color: #0002;
   backdrop-filter: blur(7px);
   z-index: 1;
