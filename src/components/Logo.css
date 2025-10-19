@@ -1,15 +1,16 @@
 .logo {
   position: relative;
-  margin: 0 auto;
+  margin-inline: auto;
+  margin-top: 60px;
   width: min-content;
   user-select: none;
 }
 
 pre {
   font-family: monospace;
-  font-size: min(2.3rem, 3.1vw);
+  font-size: min(2rem, 3.2vw);
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 
@@ -19,7 +20,6 @@ pre {
   top: 0;
   padding: 0;
   margin: 0;
-  
 }
 
 .whiteText {

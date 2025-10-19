@@ -1,9 +1,14 @@
 .container {
   width: min(1100px, 95%);
-  margin: 0 auto;
-  margin-top: 140px;
+  margin-inline: auto;
+  font-size: 22px;
+}
+
+
+#introduction-section {
+  margin-top: 80px;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 5fr 6fr;
   gap: 130px;
   align-items: center;
   justify-items: center;
@@ -16,49 +21,61 @@
 
   @media screen and (max-width: 800px) {
     margin-top: 20px;
-    gap: 15%;
+    gap: 10%;
+  }
+
+  .text-content {
+    font-size: 30px;
+
+    @media screen and (max-width: 1100px) {
+      width: min(600px, 100%);
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 20px; 
+    }
+    
+    .greeting-text {
+      font-size: 0.7em;
+      color: #dddddd;
+    }
+
+    h1.title {
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+  }
+
+  .image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 25%;
+    margin-block: 80px;
+    
+    @media screen and (max-width: 1100px) {
+      margin: 0 20%;
+      width: min(400px, 60%);
+      grid-row: 1;
+      margin-top: 12%;
+    }
   }
 }
 
-.text-content {
-  font-size: 30px;
-  /* width: min(400px, 100%); */
-  @media screen and (max-width: 1100px) {
-    width: min(600px, 100%);
-  }
 
-  @media screen and (max-width: 800px) {
-    font-size: 20px; 
-  }
-}
-
-.image-content {
+#experience {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  margin-right: 25%;
-  
-  @media screen and (max-width: 1100px) {
-    margin: 0 20%;
-    width: min(400px, 60%);
+  gap: 20px;
+}
+
+#qualifications {
+  margin-top: 60px;
+
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
-}
-
-.image-content .images {
-  position: relative;
-}
-
-.images img.main-picture {
-  width: 100%;
-  border-radius: 10%;
-} 
-
-.images-card {
-  position: absolute;
-  padding: 3% 10%;
-  border-radius: 10px;
-  backdrop-filter: blur(20px);
-  background: #3138477c radial-gradient(#ffffff0a 1px, transparent 1px);
-  background-size: 10px 10px;
-  width: 30%;
 }

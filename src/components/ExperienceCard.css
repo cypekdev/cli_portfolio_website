@@ -1,0 +1,47 @@
+.experience-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px; 
+  border-radius: 8px;
+  background-color: #3138477c;
+  backdrop-filter: blur(20px);  
+
+  .company-logo {
+    width: 120px;
+  }
+
+  .experience-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    gap: 15px;
+    
+    .experience-header {
+      /* display: flex; */
+
+      /* justify-content: space-between; */
+      gap: 10px;
+
+      
+
+      /* .position {
+      } */
+
+      .period {
+        font-size: 0.9em;
+        color: #eee;
+        /* text-align: right; */
+        float: right;
+        display: block;
+      }
+    }
+
+    .description {
+      margin: 0;
+      font-size: 0.8em;
+      color: #cccccc;
+    }
+  }
+}

@@ -32,7 +32,10 @@ export default function Projects() {
   
   return (
     <div>
+      <p style={{textAlign: "center", fontSize: "2em", marginTop: 100}}>Coming soon</p>
+      
       <div className="projects-container">
+        
         {projects.map((project, index) => (
           <ProjectCard 
             key={index} 

@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom"
-import HomeSvg from "../assets/home.svg?react"
-import FaceSvg from "../assets/face-smiling.svg?react"
-import FilesSvg from "../assets/files.svg?react"
-import PaperplaneSvg from "../assets/paper-airplane.svg?react"
+import HomeSvg from "../assets/navigation/home.svg?react"
+import FaceSvg from "../assets/navigation/face-smiling.svg?react"
+import FilesSvg from "../assets/navigation/files.svg?react"
+import PaperplaneSvg from "../assets/navigation/paper-airplane.svg?react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import "./Navigation.css"
@@ -18,11 +18,11 @@ function Header() {
     const tl = gsap.to(
       header, 
       {
-        maxWidth: "450px",
+        maxWidth: "500px",
         scrollTrigger: {
           trigger: document.body,
           start: "top top",
-          end: "+=300",
+          end: "+=1000",
           scrub: true,
           // markers: true
         },
