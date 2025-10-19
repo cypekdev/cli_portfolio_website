@@ -1,7 +1,20 @@
+@font-face {
+  font-family: Consolas;
+  font-weight: 400;
+  src: local(Consolas), url("/consola.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Consolas;
+  font-weight: 700;
+  src: url("/consolab.ttf") format("truetype");
+}
+
+
 :root {
   --site-width: min(100%, 1040px);
   
-  font-family: monospace;
+  font-family: "Consolas", monospace;
   line-height: 1.5;
   font-weight: 400;
 
