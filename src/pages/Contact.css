@@ -1,0 +1,78 @@
+#container {
+  width: min(90%, 600px);
+  margin-inline: auto;
+  margin-top: 90px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  font-size: 22px;
+
+
+  .text-section {
+    h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 300px);
+    
+    .input-group {
+      position: relative;
+
+      label {
+        position: absolute;
+        top: 6.5px;
+        left: 10px;
+        /* background-color: #222; */
+        /* padding: 0 5px; */
+        font-size: .7em;
+        color: #ccc;
+        transition: all .2s ease-in-out;
+        pointer-events: none;
+      }
+
+      input, textarea {
+        border-radius: 10px;
+        border: solid 1px #9c9c9c36;
+        padding: 10px;
+        background-color: #66666633;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        box-sizing: border-box;
+      }
+      input:focus, textarea:focus {
+        border: solid 1px #9c9c9c6e;
+        background-color: #3f3f3f55;
+      }
+      input:focus-visible, textarea:focus-visible {
+        outline: solid 2px hsl(199, 100%, 50%);
+      }
+
+      :is(input:focus, input:valid, input:active, input.text-entered, 
+        textarea:focus, textarea:valid, textarea:active, textarea.text-entered) ~ label {
+        top: -20px;
+        font-size: .6em;
+        color: #fff9;
+      }
+
+      textarea#message {
+        resize: vertical;
+      }
+    }
+
+    .form-error {
+      text-indent: 10px;
+      color: #ff6464;
+      font-size: 0.7em;
+      margin-bottom: 25px;
+    }
+
+    .form-error:last-of-type {
+      margin-bottom: 15px;
+    }
+  }
+}
